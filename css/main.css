@@ -1,0 +1,32 @@
+body {
+    /* width: 500px; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    transform: matrix(2s);
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid red;
+    transform: 1s;
+    animation: changePosition 2.5s infinite alternate 5s;
+}
+
+
+/* img:hover {} */
+
+@keyframes changePosition {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(-100px);
+    }
+}
